@@ -1,7 +1,623 @@
-body{
-    background-color: aqua;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.newdiv{
-    background-color: red;
+/*Common Styles*/
+.color1 {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.yellow {
+    color: rgba(255, 144, 14, 1);
+}
+
+.dark3 {
+    color: rgba(114, 114, 114, 1);
+}
+
+.work-sans-regular {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.primary-btn {
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/*Header Styles*/
+
+header {
+    padding: 33px 0 62px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 240px 0 228px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 45px;
+}
+
+.h-content {
+    width: 862px;
+    margin: 0 auto;
+    margin-top: 116px;
+}
+
+.header-content h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 16px;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.h-img {
+    width: calc(100% - 240px);
+    margin: 50px auto;
+}
+
+.h-img img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+/*Main Section*/
+main {
+    padding: 68px 240px;
+}
+
+/* Team Section*/
+.features {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    border-radius: 8px;
+}
+
+.feat-content h2 {
+    font-size: 45px;
+}
+
+.feat-content p {
+    font-size: 16px;
+    margin: 24px 0 32px 0;
+    text-align: center;
+}
+
+/*Experiences Section*/
+
+.experiences {
+    margin-top: 130px;
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+
+/*Left Section*/
+
+.ex-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 7px;
+    margin-bottom: 21px;
+}
+
+.ex-content p {
+    font-size: 16px;
+    text-align: start;
+}
+
+.ex-content-container {
+    margin-top: 30px;
+}
+
+.ex-content-container div {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+
+.experience h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.experience p {
+    font-size: 18px;
+}
+
+/*Right Section*/
+.ex-image {
+    width: 800px;
+    height: 1059px;
+    position: relative;
+}
+
+.ex-image img {
+    width: 708px;
+    height: 982px;
+    border-radius: 8px;
+    position: relative;
+    left: 60px;
+}
+
+.experience-tag {
+    position: relative;
+    width: 342px;
+    z-index: 1;
+    height: 200px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 144, 14, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.experience-tag h1 {
+    font-size: 65px;
+    color: white;
+}
+
+.experience-tag p {
+    color: white;
+    font-size: 25px;
+}
+
+/*Facts Section*/
+.facts-section {
+    margin-top: 130px;
+}
+
+.facts-section h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.facts-section p {
+    font-size: 17px;
+    margin: 24px 0 100px 0;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact {
+    height: 242px;
+    width: 242px;
+    border-radius: 8px;
+    border: 1px solid #ff900e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact img {
+    width: 45px;
+    height: 45px;
+}
+
+.fact h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.fact p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/*Sponspors Section*/
+.sponspors {
+    margin: 180px 0;
+}
+
+.sponspors h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sponspors p {
+    text-align: center;
+    font-size: 20px;
+    margin: 24px 0 40px 0;
+}
+
+.sponspors-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer{
+    margin: 0 240px;
+    background-color: rgba(255, 244, 231, 1);
+    margin-bottom: 100px;
+    padding: 40px 0;
+}
+
+.copyright{
+    color: rgba(66, 66, 66, 1);
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width:576px) {
+    .logo {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 7px;
+    }
+
+    .nav {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+    }
+
+    .nav ul li a {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .h-divider {
+        display: block;
+        margin: 10px;
+        height: 2px;
+        box-shadow: 0 2px 5px 1px hwb(0 76% 20%);
+    }
+
+    .h-content {
+        width: calc(100% - 100px);
+        margin-top: 25px;
+    }
+
+    .h-content h1 {
+        font-size: 30px;
+    }
+
+    .h-content p {
+        margin: 15px 0;
+    }
+
+    .h-img {
+        width: calc(100% - 40px);
+        margin: 10px auto;
+    }
+
+    header {
+        padding: 10px 0 10px 0;
+    }
+
+    /*Main Section*/
+    main {
+        padding: 20px;
+    }
+
+    /* Team Section*/
+    .features {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 130px;
+    }
+
+    .feat-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat-content h2 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+
+    .feat-content p {
+        font-size: 1em;
+        margin: 10px 0 20px 0;
+        text-align: center;
+    }
+
+    .images img {
+        width: calc(100%);
+    }
+
+    /*Experience Section*/
+    .experiences {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ex-image {
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+
+    .ex-image img {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .experience-tag {
+        width: 200px;
+        height: 100px;
+    }
+
+    .experience-tag h1 {
+        font-size: 25px;
+        color: white;
+    }
+
+    .experience-tag p {
+        color: white;
+        font-size: 15px;
+    }
+
+    /*Facts Section */
+    .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .fact {
+        height: 242px;
+        width: calc(100% - 10px);
+        border-radius: 8px;
+        border: 1px solid #ff900e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Sponspors section*/
+    .sponspors-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sponspors-img img{
+        width: calc(100% - 10px);
+    }
+
+    footer{
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:1250px) {
+    header {
+        padding: 20px 0 40px 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px 0 80px;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        list-style: none;
+        margin-right: 1em;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .logo {
+        font-size: 1.1em;
+    }
+
+    .h-content {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .header-content p {
+        font-size: 16px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .primary-btn {
+        background-color: rgba(255, 144, 14, 1);
+        border: none;
+        padding: 10px 25px;
+        border-radius: 8px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .h-img {
+        width: calc(100% - 40px);
+        margin: 10px auto;
+    }
+
+    .h-img img {
+        width: 100%;
+    }
+
+
+    .hide {
+        display: none;
+    }
+
+    /*Main Section*/
+    main {
+        padding: 20px;
+    }
+
+    /* Team Section*/
+    .features {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .feat-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat-content h2 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+
+    .feat-content p {
+        font-size: 1em;
+        margin: 10px 0 20px 0;
+        text-align: center;
+    }
+
+    .images img {
+        width: calc(100%);
+    }
+
+    /*Experience Section*/
+    .experiences {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ex-image {
+        position: relative;
+        width: 100%;
+        height: 800px;
+    }
+
+    .ex-image img {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .experience-tag {
+        width: 200px;
+        height: 100px;
+    }
+
+    .experience-tag h1 {
+        font-size: 25px;
+        color: white;
+    }
+
+    .experience-tag p {
+        color: white;
+        font-size: 15px;
+    }
+
+    /*Facts Section */
+    .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .fact {
+        height: 242px;
+        width: calc(100% - 10px);
+        border-radius: 8px;
+        border: 1px solid #ff900e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+      /*Sponspors section*/
+    .sponspors-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .sponspors-img img{
+        width: calc(80% - 10px);
+    }
+
+    footer{
+        margin: 0;
+    }
+
 }
